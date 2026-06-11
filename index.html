@@ -3,114 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sameer Wellness Centre | Transform Your Health</title>
+<title>Sameer Wellness Centre</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#f5f7f9;color:#222;line-height:1.6}
-header{background:linear-gradient(135deg,#0f9d58,#22c55e);color:#fff;padding:80px 20px;text-align:center}
-header h1{font-size:48px}
-header p{max-width:800px;margin:15px auto}
-.btn{display:inline-block;background:#fff;color:#0f9d58;padding:12px 24px;margin:10px;border-radius:30px;text-decoration:none;font-weight:bold}
-section{padding:70px 20px;max-width:1200px;margin:auto}
-h2{text-align:center;margin-bottom:30px;color:#0f9d58}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
-.gallery img,.transformations img{width:100%;border-radius:12px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
-.stat{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
-.contact{background:#0f9d58;color:#fff;text-align:center}
-footer{background:#111;color:#fff;text-align:center;padding:30px}
-.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none}
-@media(max-width:768px){.stats{grid-template-columns:repeat(2,1fr)}header h1{font-size:34px}}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f7f8;color:#333;line-height:1.6}
+.navbar{position:sticky;top:0;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:15px 30px;box-shadow:0 2px 10px rgba(0,0,0,.1);z-index:1000}
+.logo{font-size:24px;font-weight:bold;color:#16a34a}
+.navbar ul{display:flex;list-style:none;gap:20px}
+.navbar a{text-decoration:none;color:#333;font-weight:bold}
+.hero{background:linear-gradient(135deg,#16a34a,#0f766e);color:#fff;padding:100px 20px;text-align:center}
+.hero h1{font-size:52px;margin-bottom:15px}
+.hero p{max-width:800px;margin:auto}
+.btn{display:inline-block;margin:10px;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
+.btn1{background:#fff;color:#16a34a}
+.btn2{background:#25D366;color:#fff}
+.section{padding:70px 20px;max-width:1200px;margin:auto}
+.title{text-align:center;color:#16a34a;margin-bottom:30px}
+.stats,.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+.stat{text-align:center}
+.stat h2{color:#16a34a;font-size:40px}
+.gallery img{width:100%;border-radius:12px;height:260px;object-fit:cover}
+.cta{background:#16a34a;color:#fff;text-align:center;padding:60px 20px}
+.footer{background:#111;color:#fff;padding:40px 20px;text-align:center}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:40px;text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:36px}.navbar{flex-direction:column}.navbar ul{margin-top:10px;flex-wrap:wrap;justify-content:center}}
 </style>
 </head>
 <body>
+
 <nav class="navbar">
 <div class="logo">Sameer Wellness Centre</div>
-
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
-<li><a href="#transformations">Results</a></li>
-<li><a href="#gallery">Gallery</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#faq">FAQ</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-<header>
-<h1>Sameer Wellness Centre</h1>
-<p>Weight Loss • Weight Gain • Nutrition • Fitness • Lifestyle Transformation</p>
-<a class="btn" href="tel:9849981885">Call Now</a>
-<a class="btn" href="https://wa.me/919849981885">WhatsApp</a>
-</header>
 
-<section>
-<h2>About Coach Sameer</h2>
-<div class="grid">
-<div>
-<img src="weightloss.jpeg" style="width:100%;border-radius:15px;">
-</div>
-<div>
-<h3>Transform Your Health, Transform Your Life</h3>
-<p>Sameer Wellness Centre helps people achieve sustainable weight loss, weight gain, fitness improvement and healthier lifestyles through nutrition guidance and coaching.</p>
-<p><b>5+ Years Experience</b><br><b>200+ Transformations</b></p>
-</div>
-</div>
+<section class="hero">
+<h1>Transform Your Health, Transform Your Life</h1>
+<p>Personalized Wellness Coaching for Weight Loss, Weight Gain, Hair Wellness, Skin Wellness, PCOS, Thyroid Support and Lifestyle Transformation.</p>
+<br>
+<a class="btn btn1" href="tel:9849981885">Call Now</a>
+<a class="btn btn2" href="https://wa.me/919849981885">WhatsApp Now</a>
 </section>
 
-<section>
-<h2>Our Impact</h2>
+<section class="section">
+<h2 class="title">Our Results Speak For Themselves</h2>
 <div class="stats">
-<div class="stat"><h3>200+</h3><p>Transformations</p></div>
-<div class="stat"><h3>5+</h3><p>Years Experience</p></div>
-<div class="stat"><h3>Online</h3><p>Coaching</p></div>
-<div class="stat"><h3>Offline</h3><p>Support</p></div>
+<div class="card stat"><h2>100+</h2><p>Transformations</p></div>
+<div class="card stat"><h2>100+</h2><p>Happy Clients</p></div>
+<div class="card stat"><h2>200+</h2><p>Consultations</p></div>
+<div class="card stat"><h2>5+</h2><p>Years Experience</p></div>
 </div>
 </section>
 
-<section>
-<h2>Services</h2>
+<section class="section" id="about">
+<h2 class="title">Meet Coach Sameer</h2>
+<div class="card">
+<p>Coach Sameer transformed his own life through nutrition, discipline and healthy lifestyle habits. Today he helps people achieve sustainable weight loss, weight gain, improved fitness, skin wellness, hair wellness and long-term lifestyle transformation.</p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Why Choose Us</h2>
+<div class="grid">
+<div class="card">100+ Successful Transformations</div>
+<div class="card">100+ Happy Clients</div>
+<div class="card">200+ Wellness Consultations</div>
+<div class="card">5+ Years Experience</div>
+<div class="card">Online & Offline Support</div>
+<div class="card">Personalized Diet Plans</div>
+<div class="card">WhatsApp Accountability Support</div>
+<div class="card">Transparent & Honest Coaching</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2 class="title">What We Offer</h2>
 <div class="grid">
 <div class="card">Weight Loss Programs</div>
 <div class="card">Weight Gain Programs</div>
-<div class="card">Muscle Building</div>
-<div class="card">Nutrition Coaching</div>
+<div class="card">Muscle Gain</div>
+<div class="card">Skin Wellness</div>
+<div class="card">Hair Wellness</div>
 <div class="card">Digestive Health</div>
-<div class="card">Lifestyle Transformation</div>
+<div class="card">PCOS Support</div>
+<div class="card">Thyroid Support</div>
+<div class="card">Heart Health</div>
+<div class="card">Children's Health</div>
+<div class="card">Physical Fitness</div>
+<div class="card">Lifestyle Coaching</div>
 </div>
 </section>
 
-<section class="transformations">
-<h2>Success Transformations</h2>
+<section class="section">
+<h2 class="title">What You'll Get</h2>
 <div class="grid">
+<div class="card">Free Body Analysis & Wellness Scorecard</div>
+<div class="card">FREE 1-Week Breakfast Smoothie Plan</div>
+<div class="card">Customized Diet Plan & Lifestyle Blueprint</div>
+<div class="card">Weekly & Monthly Progress Tracking</div>
+<div class="card">Face-to-Face Guidance</div>
+<div class="card">Daily Motivation & WhatsApp Coaching</div>
+</div>
+</section>
+
+<section class="section" id="results">
+<h2 class="title">Real Success Stories</h2>
+<div class="grid gallery">
 <img src="weightloss.jpeg">
 <img src="weightloss1.jpeg">
 <img src="weightloss2.jpeg">
 </div>
 </section>
 
-<section class="gallery">
-<h2>Wellness Centre Gallery</h2>
+<section class="section">
+<h2 class="title">Community Support</h2>
 <div class="grid">
+<div class="card">Daily Morning Sessions</div>
+<div class="card">Evening Sessions</div>
+<div class="card">WhatsApp Support Groups</div>
+<div class="card">Weekly Zoom Meetings</div>
+<div class="card">Zumba Sessions</div>
+<div class="card">Nutrition Guidance</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Wellness Centre Gallery</h2>
+<div class="grid gallery">
 <img src="Sameer Wellness Centre.jpeg">
 <img src="Sameer Wellness Centre1.jpeg">
 <img src="Sameer Wellness Centre2.jpeg">
 <img src="Sameer Wellness Centre3.jpeg">
-<img src="excercise.jpeg">
 </div>
 </section>
 
-<section class="contact">
-<h2>Contact Us</h2>
-<p>Phone: 9849981885</p>
-<p>WhatsApp: 9849981885</p>
-<p>Opposite BMR Bala Lodge, NK Road, Srinivasa Nagar, Nandyal</p>
+<section class="section">
+<h2 class="title">Testimonials</h2>
+<div class="grid">
+<div class="card">⭐⭐⭐⭐⭐ Lost weight and gained confidence.</div>
+<div class="card">⭐⭐⭐⭐⭐ Excellent guidance and support.</div>
+<div class="card">⭐⭐⭐⭐⭐ Personalized coaching helped me stay consistent.</div>
+<div class="card">⭐⭐⭐⭐⭐ Best wellness community in Nandyal.</div>
+</div>
 </section>
 
-<footer>
+<section class="section" id="faq">
+<h2 class="title">Frequently Asked Questions</h2>
+<div class="card"><b>Do you provide online coaching?</b><br>Yes, across India.</div><br>
+<div class="card"><b>Do you create personalized diet plans?</b><br>Yes.</div><br>
+<div class="card"><b>Can beginners join?</b><br>Absolutely.</div>
+</section>
+
+<section class="cta" id="contact">
+<h2>Ready To Transform Your Life?</h2>
+<p>Book Your Free Consultation Today</p>
+<p>Phone: 9849981885 | Instagram: @sameer_wellness_coach</p>
+<p>Opposite BMR Bala Lodge, NK Road, Srinivasa Nagar, Nandyal, Andhra Pradesh</p>
+</section>
+
+<footer class="footer">
 <h3>Sameer Wellness Centre</h3>
+<p>Bringing Health & Happiness Through Good Nutrition</p>
+<p>Weight Loss | Weight Gain | Hair Wellness | Skin Wellness | Lifestyle Transformation</p>
 <p>© 2026 All Rights Reserved</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919849981885">WhatsApp</a>
+
 </body>
 </html>
